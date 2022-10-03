@@ -145,3 +145,15 @@ ul li a:hover{
         transition-property: all;
     transition-timing-function: line;
 }
+
+.contenedor-flexible-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-flexible-1 img{
+    margin-right:50px;
+}
