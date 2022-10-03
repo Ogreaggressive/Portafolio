@@ -49,3 +49,8 @@ transition-delay: 0s;
     transition-property: all;
 transition-timing-function: line;
 }
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
