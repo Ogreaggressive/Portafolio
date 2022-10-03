@@ -1,0 +1,147 @@
+*
+{
+padding:0;
+margin:0;
+}
+
+body
+{
+overflow-x:hidden;
+font-family:'PT Sans', sans-serif;
+background-color: #14182C;
+}
+
+.section-container
+{
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+padding-top: 50px;
+}
+
+.section-container .columns
+{
+flex:0 0 auto;
+width:50%;
+}
+
+.section-container .columns.image
+{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+border-radius: 50%;
+}
+
+.section-container .columns.content .content-container
+{
+padding:40px 50px;
+}
+
+.section-container .columns.content .content-container h5
+{
+font-weight:700;
+font-size:25px;
+margin-bottom:20px;
+text-align: center;
+color: #EEF1F5;
+}
+
+.section-container .columns.content .content-container h6
+{
+font-weight:700;
+font-size:20px;
+margin-bottom:20px;
+text-align:justify;
+color: #EEF1F5;
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom:30px;
+    margin-top: 30px;
+    color: #EEF1F5;
+    background-color: #271a62;
+    border:  6px solid #0D1622;
+    --color-text-bright: 237,241,245;
+}
+
+
+.section-container .columns.content .content-container p
+{
+font-weight:400;
+font-size:16px;
+margin-bottom:20px;
+margin-bottom:15px;
+text-align:justify;
+}
+
+@media screen and (max-width:767px)
+{
+    .section-container
+    {
+    flex-flow:row wrap;
+    }
+    .section-container .columns.image {
+    display:block;
+    order:1;
+    width:100%;
+    height:250px;
+    }
+    .section-container .columns.content
+    {
+    display:block;
+    order:2;
+    width:100%;
+    }
+    .section-container .columns.content .content-container
+    {
+    padding:20px 35px;
+    }
+    .section-container .columns.content .content-container h5
+    {
+    margin-bottom:5px;
+    }
+}
+
+ul
+{
+    list-style:none;
+    height:50px;
+    width:100%;
+    position: fixed;
+    top:0; left:0;
+    background: #24253E;
+    border:  6px solid #0D1622;
+    box-shadow: 2px 0 px 5px;
+    display:flex;
+    justify-content: space-around;
+}
+
+ul li{
+    margin:5px;
+    padding: 5px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+ul li a:hover{
+    background-color: #00FF00;
+    color: #403E10;
+    font-weight: bold;
+    
+    box-shadow: #3DAB3D -1px 1px, #3DAB3D -2px 2px, #3DAB3D -3px 3px, #3DAB3D -4px 4px, #3DAB3D -5px 5px, #3DAB3D -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    
+    transition-delay: 0s;
+        transition-duration: 0.4s;
+        transition-property: all;
+    transition-timing-function: line;
+}
